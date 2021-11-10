@@ -1,15 +1,20 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-
+using Trash_Dash.Game.Entities;
 namespace Trash_Dash
 {
-    public class Game1 : Game
+    public class TrashGame : Microsoft.Xna.Framework.Game
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
-        public Game1()
+        private Texture2D debugSquare;
+
+
+
+        private Spawnable test;
+        public TrashGame()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
@@ -19,6 +24,7 @@ namespace Trash_Dash
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            test = new Spawnable(new Vector2(100, 100), debugSquare);
 
             base.Initialize();
         }
@@ -26,6 +32,8 @@ namespace Trash_Dash
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+            debugSquare = new Texture2D(GraphicsDevice, 1, 1);
+            debugSquare.SetData(new[] { Color.White });
 
             // TODO: use this.Content to load your game content here
         }

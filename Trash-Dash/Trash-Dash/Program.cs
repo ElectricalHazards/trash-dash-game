@@ -7,7 +7,7 @@ namespace Trash_Dash
         [STAThread]
         static void Main()
         {
-            using (var game = new Game1())
+            using (var game = new TrashGame())
                 game.Run();
         }
     }
