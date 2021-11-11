@@ -1,14 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Trash_Dash.Game.Objects
 {
-    class Entity : Object
+    public class Entity : Object
     {
-        private Vector2 Velocity;
+        protected Vector2 Velocity;
 
-
+        public Entity(Vector2 pos, Texture2D tex) : base(pos, tex){ 
+        
+        }
+       
     }
 }

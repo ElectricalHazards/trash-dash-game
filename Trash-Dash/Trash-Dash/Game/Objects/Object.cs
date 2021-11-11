@@ -4,15 +4,14 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Trash_Dash.Objects
+namespace Trash_Dash.Game.Objects
 {
-    class Object
+    public class Object
     {
-        private Vector2 position;
-        private Texture2D texture;
+        protected Vector2 position;
+        protected Texture2D texture;
 
-        public Object(Vector2 pos, Texture2D tex)
-        {
+        public Object(Vector2 pos, Texture2D tex){
             position = pos;
             texture = tex;
         }
