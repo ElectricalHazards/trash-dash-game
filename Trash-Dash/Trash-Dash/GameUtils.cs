@@ -8,5 +8,7 @@ namespace Trash_Dash
     {
 
         public static float DELTA_TIME;
+        public const int PLAYER_X_LOCK = 200;
+        public static float GAME_SPEED = 1;
     }
 }

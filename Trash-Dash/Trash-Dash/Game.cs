@@ -14,13 +14,12 @@ namespace Trash_Dash
 
 
 
-        private Spawnable test;
-        bool flag = false;
+        public Player player;
         public TrashGame()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            IsMouseVisible = true;
+            IsMouseVisible = false;
         }
 
         protected override void Initialize()
@@ -36,8 +35,7 @@ namespace Trash_Dash
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             debugSquare = new Texture2D(GraphicsDevice, 1, 1);
             debugSquare.SetData(new[] { Color.White });
-            test = new Spawnable(new Vector2(100, 100), debugSquare);
-            flag = true;
+            player = new Player(new Vector2(GameUtils.PLAYER_X_LOCK, _spriteBatch.GraphicsDevice.Viewport.Height/2), debugSquare);
 
             // TODO: use this.Content to load your game content here
         }
@@ -45,11 +43,8 @@ namespace Trash_Dash
         protected override void Update(GameTime gameTime)
         {
             GameUtils.DELTA_TIME = (float)gameTime.ElapsedGameTime.TotalSeconds;
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                test.velocity.X = 25.0f;
-
             // TODO: Add your update logic here
-            test.Update(gameTime);
+            player.Update(gameTime);
 
             base.Update(gameTime);
         }
@@ -59,7 +54,7 @@ namespace Trash_Dash
             GraphicsDevice.Clear(Color.CornflowerBlue);
             _spriteBatch.Begin();
 
-            test.Draw(_spriteBatch);
+            player.Draw(_spriteBatch);
 
             // TODO: Add your drawing code here
             _spriteBatch.End();
