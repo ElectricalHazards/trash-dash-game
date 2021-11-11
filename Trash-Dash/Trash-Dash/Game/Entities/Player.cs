@@ -3,13 +3,13 @@ using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Trash_Dash.Game.Objects;
 
 namespace Trash_Dash.Game.Entities
 {
-    public class Fish : Spawnable
-    {
-        public Fish(Vector2 pos, Texture2D tex) : base(pos, tex)
-        {
+    class Player : Entity {
+        public Player() { }
+        public Player(Vector2 pos, Texture2D tex) : base(pos, tex){
 
         }
     }

@@ -10,14 +10,14 @@ namespace Trash_Dash.Game.Entities
     public class Spawnable : Entity
     {
 
-
+        public Spawnable() { }
         public Spawnable(Vector2 pos, Texture2D tex) : base(pos, tex){
-
-        }
-        void Update()
-        {
-            //Velocity need to be constant to the left
             
+        }
+        public void Update(GameTime gameTime){
+
+            velocity.X = 25;
+            base.Update(gameTime);
         }
     }
 }
