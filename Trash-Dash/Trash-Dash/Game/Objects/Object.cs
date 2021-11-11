@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Trash_Dash.Game.Objects
 {
-    public class Object
+    public class Object : IObject
     {
         protected Vector2 position;
         protected Texture2D texture;
@@ -17,7 +17,7 @@ namespace Trash_Dash.Game.Objects
             texture = tex;
         }
 
-        public void Draw(SpriteBatch _spriteBatch)
+        public new void Draw(SpriteBatch _spriteBatch)
         {
             _spriteBatch.Draw(texture, new Rectangle((int)position.X, (int)position.Y, 3, 3), Color.White);
         }

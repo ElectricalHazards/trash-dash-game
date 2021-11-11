@@ -13,7 +13,7 @@ namespace Trash_Dash.Game.Entities
         public Player(Vector2 pos, Texture2D tex) : base(pos, tex){
 
         }
-        public void Update(GameTime _gameTime) {
+        public new void Update(GameTime _gameTime) {
             if (Keyboard.GetState().IsKeyDown(Keys.Up)) {
                 velocity.Y = -100.0f * GameUtils.GAME_SPEED;
             }
