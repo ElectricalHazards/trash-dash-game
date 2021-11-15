@@ -14,7 +14,7 @@ namespace Trash_Dash.Game.Entities
         public Spawnable(Vector2 pos, Texture2D tex) : base(pos, tex){
             
         }
-        public void Update(GameTime gameTime){
+        public new void Update(GameTime gameTime){
 
             velocity.X = 25;
             base.Update(gameTime);
