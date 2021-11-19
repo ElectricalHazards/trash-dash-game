@@ -11,7 +11,7 @@ namespace Trash_Dash.Game.Entities
 
         public Trash(Vector2 pos, Texture2D tex) : base(pos, tex)
         {
-
+            scalingFactor = 25;
         }
     }
 }

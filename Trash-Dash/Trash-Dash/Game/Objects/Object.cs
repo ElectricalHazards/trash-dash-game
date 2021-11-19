@@ -10,6 +10,7 @@ namespace Trash_Dash.Game.Objects
     {
         protected Vector2 position;
         protected Texture2D texture;
+        protected int scalingFactor = 8;
 
         public Object(){ }
         public Object(Vector2 pos, Texture2D tex){
@@ -19,7 +20,7 @@ namespace Trash_Dash.Game.Objects
 
         public new void Draw(SpriteBatch _spriteBatch)
         {
-            _spriteBatch.Draw(texture, new Rectangle((int)position.X, (int)position.Y, 3, 3), Color.White);
+            _spriteBatch.Draw(texture, new Rectangle((int)position.X, (int)position.Y, texture.Width/scalingFactor, texture.Height/scalingFactor), Color.White);
         }
     }   
 }

@@ -15,7 +15,7 @@ namespace Trash_Dash.Game.Objects
         public Entity(Vector2 pos, Texture2D tex) : base(pos, tex){
          
         }
-        public void Update(GameTime gameTime){
+        public new void Update(GameTime gameTime){
             position.X += velocity.X * GameUtils.DELTA_TIME;
             position.Y += velocity.Y * GameUtils.DELTA_TIME;
 

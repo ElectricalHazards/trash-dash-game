@@ -16,7 +16,7 @@ namespace Trash_Dash.Game.Entities
         }
         public new void Update(GameTime gameTime){
 
-            velocity.X = 25;
+            velocity.X = -25;
             base.Update(gameTime);
         }
     }
