@@ -10,7 +10,7 @@ namespace Trash_Dash.Game.Objects
     {
         protected Vector2 position;
         protected Texture2D texture;
-        protected int scalingFactor = 8;
+        protected int scalingFactor = 1;
 
         public Object(){ }
         public Object(Vector2 pos, Texture2D tex){

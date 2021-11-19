@@ -11,7 +11,7 @@ namespace Trash_Dash.Game.Entities
     public class Player : Entity {
         public Player() { }
         public Player(Vector2 pos, Texture2D tex) : base(pos, tex){
-
+            scalingFactor = 8;
         }
         public new void Update(GameTime _gameTime) {
             if (Keyboard.GetState().IsKeyDown(Keys.Up)) {
