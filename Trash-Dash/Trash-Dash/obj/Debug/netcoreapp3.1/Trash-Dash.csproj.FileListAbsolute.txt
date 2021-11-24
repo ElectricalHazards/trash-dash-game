@@ -23,3 +23,4 @@ C:\Users\rgarr\Documents\Programming\Pain\trash-dash-game\Trash-Dash\Trash-Dash\
 C:\Users\rgarr\Documents\Programming\Pain\trash-dash-game\Trash-Dash\Trash-Dash\obj\Debug\netcoreapp3.1\Trash-Dash.genruntimeconfig.cache
 C:\Users\rgarr\Documents\Programming\Pain\trash-dash-game\Trash-Dash\Trash-Dash\bin\Debug\netcoreapp3.1\Content\player.xnb
 C:\Users\rgarr\Documents\Programming\Pain\trash-dash-game\Trash-Dash\Trash-Dash\bin\Debug\netcoreapp3.1\Content\trash.xnb
+C:\Users\rgarr\Documents\Programming\Pain\trash-dash-game\Trash-Dash\Trash-Dash\bin\Debug\netcoreapp3.1\Content\boarder.xnb

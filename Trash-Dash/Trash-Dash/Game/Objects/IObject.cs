@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Trash_Dash.Game.Objects
 {
-    public class IObject {
+    public interface IObject {
 
         public void Initialize(GameTime _gameTime) { }
         public void Update(GameTime _gameTime) { }

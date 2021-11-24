@@ -4,10 +4,12 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/rgarr/Documents/Programming/Pain/trash-dash-game/Trash-Dash/Trash-Dash/Content/boarder.png</File>
     <File>C:/Users/rgarr/Documents/Programming/Pain/trash-dash-game/Trash-Dash/Trash-Dash/Content/player.png</File>
     <File>C:/Users/rgarr/Documents/Programming/Pain/trash-dash-game/Trash-Dash/Trash-Dash/Content/trash.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
